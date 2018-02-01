@@ -1,65 +1,48 @@
+/* Main Content Styles */
+
 .main-content {
-   border-top: 2px solid black;
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-    @media @tablet {
-        margin: 0px;
-        padding: 0px;
-    }
-    @media @phone {
-        margin: 50px 0;
-    }
-}
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: 16px;
+    line-height: 18px;
 
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-    @media @tablet {
-        margin:15px;
-        p {
-            padding-right:15px
-        }
-    }
-    @media @phone {
+    .top-content {
         display: flex;
-        flex-direction: column;
+        justify-content: space-around;
+        h4 {
+            margin-top: 10px;
+            text-align: center;
+        }
         p {
-            padding-bottom: 50px;
+            padding-right: 20px;
+        }
+        @media @phone {
+            flex-direction: column;
         }
     }
-}
 
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-    @media @tablet {
-        width: 100%;
-        margin: 15px 0;
-    }
-}
-
-
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-    @media @tablet {
-        margin:15px;
-        p {
-            padding-right:15px;
+    .middle-img {
+        display: block;
+        margin: 30px auto;
+        @media @laptop {
+            width: 100%;
         }
     }
-    @media @phone {
+
+    .bottom-content {
         display: flex;
-        flex-direction: column;
-        p {
-            padding-bottom: 50px;
+        justify-content: space-around;
+            h4 {
+                margin-top: 10px;
+                text-align: center;
+            }
+            p {
+                padding-right: 20px;
+            }
+        @media @phone {
+            flex-direction: column;
         }
     }
-}
-
-.main-content .bottom-content p {
-    padding-right: 20px;
 }
